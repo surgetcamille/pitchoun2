@@ -1,5 +1,91 @@
-<p style="color: green"><%= notice %></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pitchoun's Museum</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Styles CSS intégrés */
+    body {
+      background-image: url('https://cdn.midjourney.com/9f27bebe-166e-4b7d-b0b2-d390d24c9968/0_0.png');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .navbar-brand {
+      color: #6c757d;
+      font-weight: bold;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+    .navbar-brand:hover {
+      color: #495057;
+      transform: scale(1.1);
+    }
+    .nav-link {
+      color: #495057 !important;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #343a40 !important;
+      transform: scale(1.1);
+    }
+    h1 {
+      background-color: #f8f9fa;
+      border: 2px solid #6c757d;
+      padding: 30px;
+      text-align: center;
+      margin-top: 50px;
+      color: #495057;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: fadeInDown 1s ease;
+    }
+    h2 {
+      background-color: #f8f9fa;
+      border: 2px solid #6c757d;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: #495057;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    .btn-outline-secondary {
+      color: #f8f9fa; /* Text color */
+      background-color: #6c757d; /* Button background color */
+      border-color: #6c757d; /* Border color */
+      transition: all 0.3s ease;
+      border-radius: 30px;
+      font-size: 1.2rem;
+    }
+    .btn-outline-secondary:hover {
+      background-color: #343a40; /* Button background color on hover */
+      color: #f8f9fa; /* Text color on hover */
+      transform: scale(1.1) rotate(5deg);
+    }
+    .btn-outline-secondary:focus {
+      box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+    }
 
+<<<<<<< HEAD
 
 <body style="background-image: url('https://cdn.midjourney.com/9f27bebe-166e-4b7d-b0b2-d390d24c9968/0_0.png'); background-size: cover; background-position: center;">
 <h1>Pitchoun's museum</h1>
@@ -19,3 +105,90 @@
 </div>
 <%= link_to "New artwork", new_artwork_path %>
 </body>
+=======
+    /* Animations */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Animation bouton */
+    .btn-outline-secondary:hover {
+      animation: pulse 0.5s infinite alternate;
+    }
+    @keyframes pulse {
+      to {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Pitchoun's Museum</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome to Pitchoun's Museum</h1>
+    <h2>Discover a world of creativity and imagination!</h2>
+
+    <div class="mb-5">
+      <a class="btn btn-outline-secondary" href="<%= new_child_path %>">Create a new profile for your child</a>
+    </div>
+
+    <div id="artworks">
+      <% @artworks.each do |artwork| %>
+        <%= render artwork %>
+        <p>
+          <%= link_to "Show this artwork", artwork %>
+        </p>
+      <% end %>
+    </div>
+    
+    <div class="mb-5">
+      <a class="btn btn-outline-secondary" href="<%= new_artwork_path %>">Create a new artwork</a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+>>>>>>> b920c820539ea03a6c4140146b1fc24f94a6194b

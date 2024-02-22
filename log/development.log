@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2024-02-22 14:19:22 +0100
   
 ActiveRecord::NoDatabaseError (We could not find your database: pitchoun2_development. Available database configurations can be found in config/database.yml.
@@ -1109,7 +1108,6 @@ Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 2020)
 
 Started GET "/" for 127.0.0.1 at 2024-02-22 14:39:21 +0100
   [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-=======
 Started GET "/" for 127.0.0.1 at 2024-02-22 14:36:08 +0100
   [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by ArtworksController#index as HTML
@@ -1447,7 +1445,6 @@ Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 2316)
 
 
 Started GET "/artworks" for 127.0.0.1 at 2024-02-22 14:48:50 +0100
->>>>>>> 9501e8ba1e32cfe2fee523744fde87ed31f136d6
 Processing by ArtworksController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering artworks/index.html.erb within layouts/application

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2024-02-22 14:19:22 +0100
   
 ActiveRecord::NoDatabaseError (We could not find your database: pitchoun2_development. Available database configurations can be found in config/database.yml.
@@ -1108,11 +1109,351 @@ Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 2020)
 
 Started GET "/" for 127.0.0.1 at 2024-02-22 14:39:21 +0100
   [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+=======
+Started GET "/" for 127.0.0.1 at 2024-02-22 14:36:08 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/index.html.erb within layouts/application
+  [1m[36mArtwork Load (1.1ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks"[0m
+  ↳ app/views/artworks/index.html.erb:99
+  Rendered artworks/index.html.erb within layouts/application (Duration: 41.8ms | Allocations: 4154)
+  Rendered layout layouts/application.html.erb (Duration: 272.1ms | Allocations: 39500)
+Completed 200 OK in 316ms (Views: 259.7ms | ActiveRecord: 18.3ms | Allocations: 49364)
+
+
+Started GET "/" for 127.0.0.1 at 2024-02-22 14:39:21 +0100
+Processing by ArtworksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/index.html.erb within layouts/application
+  [1m[36mArtwork Load (4.0ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks"[0m
+  ↳ app/views/artworks/index.html.erb:155
+  Rendered artworks/index.html.erb within layouts/application (Duration: 128.8ms | Allocations: 908)
+  Rendered layout layouts/application.html.erb (Duration: 291.0ms | Allocations: 17035)
+Completed 200 OK in 342ms (Views: 294.2ms | ActiveRecord: 3.9ms | Allocations: 18771)
+
+
+Started GET "/children/new" for 127.0.0.1 at 2024-02-22 14:40:31 +0100
+Processing by ChildrenController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering children/new.html.erb within layouts/application
+  Rendered children/_form.html.erb (Duration: 103.9ms | Allocations: 3178)
+  Rendered children/new.html.erb within layouts/application (Duration: 109.3ms | Allocations: 3504)
+  Rendered layout layouts/application.html.erb (Duration: 138.6ms | Allocations: 4673)
+Completed 200 OK in 610ms (Views: 172.3ms | ActiveRecord: 30.1ms | Allocations: 18404)
+
+
+Started GET "/artworks/new" for 127.0.0.1 at 2024-02-22 14:40:32 +0100
+Processing by ArtworksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/new.html.erb within layouts/application
+  Rendered artworks/_form.html.erb (Duration: 67.1ms | Allocations: 2127)
+  Rendered artworks/new.html.erb within layouts/application (Duration: 103.4ms | Allocations: 2412)
+  Rendered layout layouts/application.html.erb (Duration: 163.2ms | Allocations: 3585)
+Completed 200 OK in 600ms (Views: 175.6ms | ActiveRecord: 8.8ms | Allocations: 11273)
+
+
+Started GET "/children/new" for 127.0.0.1 at 2024-02-22 14:40:51 +0100
+Processing by ChildrenController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering children/new.html.erb within layouts/application
+  Rendered children/_form.html.erb (Duration: 60.0ms | Allocations: 1413)
+  Rendered children/new.html.erb within layouts/application (Duration: 67.3ms | Allocations: 1492)
+  Rendered layout layouts/application.html.erb (Duration: 94.8ms | Allocations: 2648)
+Completed 200 OK in 140ms (Views: 139.5ms | ActiveRecord: 0.0ms | Allocations: 2919)
+
+
+Started GET "/artworks/new" for 127.0.0.1 at 2024-02-22 14:40:56 +0100
+Processing by ArtworksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/new.html.erb within layouts/application
+  Rendered artworks/_form.html.erb (Duration: 25.6ms | Allocations: 1235)
+  Rendered artworks/new.html.erb within layouts/application (Duration: 42.7ms | Allocations: 1314)
+  Rendered layout layouts/application.html.erb (Duration: 120.3ms | Allocations: 2473)
+Completed 200 OK in 157ms (Views: 156.2ms | ActiveRecord: 0.0ms | Allocations: 2736)
+
+
+Started GET "/children/new" for 127.0.0.1 at 2024-02-22 14:40:57 +0100
+Processing by ChildrenController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering children/new.html.erb within layouts/application
+  Rendered children/_form.html.erb (Duration: 3.5ms | Allocations: 1437)
+  Rendered children/new.html.erb within layouts/application (Duration: 41.9ms | Allocations: 1516)
+  Rendered layout layouts/application.html.erb (Duration: 88.7ms | Allocations: 2672)
+Completed 200 OK in 109ms (Views: 108.2ms | ActiveRecord: 0.0ms | Allocations: 2943)
+
+
+Started GET "/artworks/new" for 127.0.0.1 at 2024-02-22 14:41:02 +0100
+Processing by ArtworksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/new.html.erb within layouts/application
+  Rendered artworks/_form.html.erb (Duration: 70.9ms | Allocations: 1250)
+  Rendered artworks/new.html.erb within layouts/application (Duration: 95.3ms | Allocations: 1329)
+  Rendered layout layouts/application.html.erb (Duration: 165.6ms | Allocations: 2486)
+Completed 200 OK in 221ms (Views: 220.1ms | ActiveRecord: 0.0ms | Allocations: 2749)
+
+
+Started GET "/children/new" for 127.0.0.1 at 2024-02-22 14:41:03 +0100
+Processing by ChildrenController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering children/new.html.erb within layouts/application
+  Rendered children/_form.html.erb (Duration: 48.2ms | Allocations: 1407)
+  Rendered children/new.html.erb within layouts/application (Duration: 64.0ms | Allocations: 1486)
+  Rendered layout layouts/application.html.erb (Duration: 96.9ms | Allocations: 2642)
+Completed 200 OK in 131ms (Views: 130.8ms | ActiveRecord: 0.0ms | Allocations: 2909)
+
+
+Started GET "/artworks/new" for 127.0.0.1 at 2024-02-22 14:41:06 +0100
+Processing by ArtworksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/new.html.erb within layouts/application
+  Rendered artworks/_form.html.erb (Duration: 6.7ms | Allocations: 1244)
+  Rendered artworks/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1323)
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 2511)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms | Allocations: 2775)
+
+
+Started GET "/" for 127.0.0.1 at 2024-02-22 14:41:06 +0100
+Processing by ArtworksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/index.html.erb within layouts/application
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks"[0m
+  ↳ app/views/artworks/index.html.erb:155
+  Rendered artworks/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 456)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 1800)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.4ms | Allocations: 2056)
+
+
+Started GET "/artworks/new" for 127.0.0.1 at 2024-02-22 14:41:07 +0100
+Processing by ArtworksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/new.html.erb within layouts/application
+  Rendered artworks/_form.html.erb (Duration: 33.0ms | Allocations: 1241)
+  Rendered artworks/new.html.erb within layouts/application (Duration: 34.0ms | Allocations: 1320)
+  Rendered layout layouts/application.html.erb (Duration: 76.1ms | Allocations: 2476)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.0ms | Allocations: 2739)
+
+
+Started GET "/children/new" for 127.0.0.1 at 2024-02-22 14:41:09 +0100
+Processing by ChildrenController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering children/new.html.erb within layouts/application
+  Rendered children/_form.html.erb (Duration: 44.8ms | Allocations: 1410)
+  Rendered children/new.html.erb within layouts/application (Duration: 50.5ms | Allocations: 1490)
+  Rendered layout layouts/application.html.erb (Duration: 76.7ms | Allocations: 2649)
+Completed 200 OK in 115ms (Views: 114.2ms | ActiveRecord: 0.0ms | Allocations: 2913)
+
+
+Started POST "/children" for 127.0.0.1 at 2024-02-22 14:43:54 +0100
+Processing by ChildrenController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "child"=>{"picture"=>"https://cdn.midjourney.com/5fb84608-53d3-4cfc-aefe-6278a9db9b49/0_0.png \n", "name"=>"Dane", "firstname"=>"Dorothée", "age"=>"3", "country"=>"France", "city"=>"Marseille"}, "commit"=>"Create Child"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/children_controller.rb:27:in `block in create'
+  [1m[36mChild Create (8.0ms)[0m  [1m[32mINSERT INTO "children" ("picture", "name", "firstname", "age", "country", "city", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["picture", "https://cdn.midjourney.com/5fb84608-53d3-4cfc-aefe-6278a9db9b49/0_0.png \n"], ["name", "Dane"], ["firstname", "Dorothée"], ["age", 3], ["country", "France"], ["city", "Marseille"], ["created_at", "2024-02-22 13:43:54.873230"], ["updated_at", "2024-02-22 13:43:54.873230"]]
+  ↳ app/controllers/children_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/children_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/children/1
+Completed 302 Found in 35ms (ActiveRecord: 10.1ms | Allocations: 3606)
+
+
+Started GET "/children/1" for 127.0.0.1 at 2024-02-22 14:43:54 +0100
+Processing by ChildrenController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mChild Load (0.3ms)[0m  [1m[34mSELECT "children".* FROM "children" WHERE "children"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/children_controller.rb:63:in `set_child'
+  Rendering layout layouts/application.html.erb
+  Rendering children/show.html.erb within layouts/application
+  Rendered children/_child.html.erb (Duration: 1.6ms | Allocations: 283)
+  Rendered children/show.html.erb within layouts/application (Duration: 19.9ms | Allocations: 1353)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 2505)
+Completed 200 OK in 38ms (Views: 25.4ms | ActiveRecord: 0.4ms | Allocations: 5250)
+
+
+Started GET "/children/new" for 127.0.0.1 at 2024-02-22 14:44:00 +0100
+Processing by ChildrenController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering children/new.html.erb within layouts/application
+  Rendered children/_form.html.erb (Duration: 62.0ms | Allocations: 1410)
+  Rendered children/new.html.erb within layouts/application (Duration: 62.6ms | Allocations: 1489)
+  Rendered layout layouts/application.html.erb (Duration: 69.7ms | Allocations: 2662)
+Completed 200 OK in 100ms (Views: 98.8ms | ActiveRecord: 0.0ms | Allocations: 2927)
+
+
+Started GET "/children/new" for 127.0.0.1 at 2024-02-22 14:44:06 +0100
+Processing by ChildrenController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering children/new.html.erb within layouts/application
+  Rendered children/_form.html.erb (Duration: 6.1ms | Allocations: 1401)
+  Rendered children/new.html.erb within layouts/application (Duration: 14.7ms | Allocations: 1480)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 2653)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 2918)
+
+
+Started GET "/artworks/new" for 127.0.0.1 at 2024-02-22 14:44:06 +0100
+Processing by ArtworksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/new.html.erb within layouts/application
+  Rendered artworks/_form.html.erb (Duration: 3.8ms | Allocations: 1262)
+  Rendered artworks/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1341)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2497)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 2760)
+
+
+Started POST "/artworks" for 127.0.0.1 at 2024-02-22 14:44:36 +0100
+Processing by ArtworksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "artwork"=>{"paint"=>"https://cdn.midjourney.com/5fb84608-53d3-4cfc-aefe-6278a9db9b49/0_0.png \n", "title"=>"Art joli", "author"=>"Dorothée", "date"=>"2024-02-22", "description"=>"C'est mon dessin !!!"}, "commit"=>"Create Artwork"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artworks_controller.rb:27:in `block in create'
+  [1m[36mArtwork Create (5.0ms)[0m  [1m[32mINSERT INTO "artworks" ("paint", "title", "author", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["paint", "https://cdn.midjourney.com/5fb84608-53d3-4cfc-aefe-6278a9db9b49/0_0.png \n"], ["title", "Art joli"], ["author", "Dorothée"], ["date", "2024-02-22"], ["description", "C'est mon dessin !!!"], ["created_at", "2024-02-22 13:44:36.079192"], ["updated_at", "2024-02-22 13:44:36.079192"]]
+  ↳ app/controllers/artworks_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artworks_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/artworks/1
+Completed 302 Found in 21ms (ActiveRecord: 7.0ms | Allocations: 2238)
+
+
+Started GET "/artworks/1" for 127.0.0.1 at 2024-02-22 14:44:36 +0100
+Processing by ArtworksController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mArtwork Load (0.9ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artworks_controller.rb:63:in `set_artwork'
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/show.html.erb within layouts/application
+  Rendered artworks/_artwork.html.erb (Duration: 2.0ms | Allocations: 254)
+  Rendered artworks/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1018)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 2173)
+Completed 200 OK in 32ms (Views: 20.4ms | ActiveRecord: 0.9ms | Allocations: 3564)
+
+
+Started GET "/artworks/1/edit" for 127.0.0.1 at 2024-02-22 14:44:38 +0100
+Processing by ArtworksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtwork Load (0.5ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artworks_controller.rb:63:in `set_artwork'
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/edit.html.erb within layouts/application
+  Rendered artworks/_form.html.erb (Duration: 6.0ms | Allocations: 1324)
+  Rendered artworks/edit.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1575)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 2727)
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 0.4ms | Allocations: 3466)
+
+
+Started GET "/artworks" for 127.0.0.1 at 2024-02-22 14:44:39 +0100
+Processing by ArtworksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/index.html.erb within layouts/application
+  [1m[36mArtwork Load (0.6ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks"[0m
+  ↳ app/views/artworks/index.html.erb:155
+  Rendered artworks/_artwork.html.erb (Duration: 0.8ms | Allocations: 35)
+  Rendered artworks/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 605)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 1907)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.6ms | Allocations: 2161)
+
+
+Started GET "/children/new" for 127.0.0.1 at 2024-02-22 14:44:41 +0100
+Processing by ChildrenController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering children/new.html.erb within layouts/application
+  Rendered children/_form.html.erb (Duration: 24.7ms | Allocations: 1410)
+  Rendered children/new.html.erb within layouts/application (Duration: 31.9ms | Allocations: 1489)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 2662)
+Completed 200 OK in 84ms (Views: 83.6ms | ActiveRecord: 0.0ms | Allocations: 2928)
+
+
+Started GET "/artworks/1" for 127.0.0.1 at 2024-02-22 14:44:45 +0100
+Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtwork Load (0.3ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artworks_controller.rb:63:in `set_artwork'
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/show.html.erb within layouts/application
+  Rendered artworks/_artwork.html.erb (Duration: 0.2ms | Allocations: 35)
+  Rendered artworks/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 456)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1620)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 2295)
+
+
+Started GET "/artworks/new" for 127.0.0.1 at 2024-02-22 14:44:48 +0100
+Processing by ArtworksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/new.html.erb within layouts/application
+  Rendered artworks/_form.html.erb (Duration: 3.1ms | Allocations: 1247)
+  Rendered artworks/new.html.erb within layouts/application (Duration: 30.0ms | Allocations: 1326)
+  Rendered layout layouts/application.html.erb (Duration: 87.2ms | Allocations: 2482)
+Completed 200 OK in 143ms (Views: 103.5ms | ActiveRecord: 0.0ms | Allocations: 2746)
+
+
+Started POST "/artworks" for 127.0.0.1 at 2024-02-22 14:45:25 +0100
+Processing by ArtworksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "artwork"=>{"paint"=>"https://cdn.midjourney.com/5fb84608-53d3-4cfc-aefe-6278a9db9b49/0_1.png \n", "title"=>"Ouaaah", "author"=>"Titouan", "date"=>"2024-02-06", "description"=>"C mon dessin !"}, "commit"=>"Create Artwork"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artworks_controller.rb:27:in `block in create'
+  [1m[36mArtwork Create (2.6ms)[0m  [1m[32mINSERT INTO "artworks" ("paint", "title", "author", "date", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["paint", "https://cdn.midjourney.com/5fb84608-53d3-4cfc-aefe-6278a9db9b49/0_1.png \n"], ["title", "Ouaaah"], ["author", "Titouan"], ["date", "2024-02-06"], ["description", "C mon dessin !"], ["created_at", "2024-02-22 13:45:25.688782"], ["updated_at", "2024-02-22 13:45:25.688782"]]
+  ↳ app/controllers/artworks_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artworks_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/artworks/2
+Completed 302 Found in 16ms (ActiveRecord: 3.8ms | Allocations: 2093)
+
+
+Started GET "/artworks/2" for 127.0.0.1 at 2024-02-22 14:45:25 +0100
+Processing by ArtworksController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mArtwork Load (0.8ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/artworks_controller.rb:63:in `set_artwork'
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/show.html.erb within layouts/application
+  Rendered artworks/_artwork.html.erb (Duration: 0.1ms | Allocations: 34)
+  Rendered artworks/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 482)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 1637)
+Completed 200 OK in 15ms (Views: 7.2ms | ActiveRecord: 0.8ms | Allocations: 2314)
+
+
+Started GET "/children/new" for 127.0.0.1 at 2024-02-22 14:47:22 +0100
+Processing by ChildrenController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering children/new.html.erb within layouts/application
+  Rendered children/_form.html.erb (Duration: 5.6ms | Allocations: 1413)
+  Rendered children/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1492)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2648)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 2912)
+
+
+Started GET "/artworks" for 127.0.0.1 at 2024-02-22 14:47:23 +0100
+Processing by ArtworksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/index.html.erb within layouts/application
+  [1m[36mArtwork Load (13.7ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks"[0m
+  ↳ app/views/artworks/index.html.erb:155
+  Rendered artworks/_artwork.html.erb (Duration: 0.3ms | Allocations: 35)
+  Rendered artworks/_artwork.html.erb (Duration: 0.2ms | Allocations: 33)
+  Rendered artworks/index.html.erb within layouts/application (Duration: 32.6ms | Allocations: 746)
+  Rendered layout layouts/application.html.erb (Duration: 54.6ms | Allocations: 2072)
+Completed 200 OK in 79ms (Views: 64.1ms | ActiveRecord: 13.6ms | Allocations: 2326)
+
+
+Started GET "/artworks/1" for 127.0.0.1 at 2024-02-22 14:47:30 +0100
+Processing by ArtworksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtwork Load (0.2ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artworks_controller.rb:63:in `set_artwork'
+  Rendering layout layouts/application.html.erb
+  Rendering artworks/show.html.erb within layouts/application
+  Rendered artworks/_artwork.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered artworks/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1643)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 2316)
+
+
+Started GET "/artworks" for 127.0.0.1 at 2024-02-22 14:48:50 +0100
+>>>>>>> 9501e8ba1e32cfe2fee523744fde87ed31f136d6
 Processing by ArtworksController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering artworks/index.html.erb within layouts/application
   [1m[36mArtwork Load (0.5ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks"[0m
   ↳ app/views/artworks/index.html.erb:155
+<<<<<<< HEAD
   Rendered artworks/index.html.erb within layouts/application (Duration: 34.2ms | Allocations: 3979)
   Rendered layout layouts/application.html.erb (Duration: 116.8ms | Allocations: 38278)
 Completed 200 OK in 135ms (Views: 96.6ms | ActiveRecord: 28.4ms | Allocations: 48146)
@@ -2039,5 +2380,12 @@ Processing by ArtworksController#index as HTML
   Rendered artworks/index.html.erb within layouts/application (Duration: 51.2ms | Allocations: 448)
   Rendered layout layouts/application.html.erb (Duration: 89.2ms | Allocations: 1769)
 Completed 200 OK in 115ms (Views: 112.7ms | ActiveRecord: 1.2ms | Allocations: 2028)
+=======
+  Rendered artworks/_artwork.html.erb (Duration: 1.0ms | Allocations: 315)
+  Rendered artworks/_artwork.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered artworks/index.html.erb within layouts/application (Duration: 29.4ms | Allocations: 4956)
+  Rendered layout layouts/application.html.erb (Duration: 85.2ms | Allocations: 20086)
+Completed 200 OK in 100ms (Views: 89.8ms | ActiveRecord: 6.6ms | Allocations: 21820)
+>>>>>>> 9501e8ba1e32cfe2fee523744fde87ed31f136d6
 
 

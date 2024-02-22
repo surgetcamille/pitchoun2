@@ -1,7 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Artworks</h1>
 
+<body style="background-image: url('https://cdn.midjourney.com/9f27bebe-166e-4b7d-b0b2-d390d24c9968/0_0.png'); background-size: cover; background-position: center;">
+<h1>Pitchoun's museum</h1>
+<h2>Fin here all your child's drawing turn into real artwork !<h2>
+<div>
+
+<button type="button" href="<%= new_child_path %>">Create a new profile for your child</button>
+
+</div>
 <div id="artworks">
   <% @artworks.each do |artwork| %>
     <%= render artwork %>
@@ -10,5 +17,5 @@
     </p>
   <% end %>
 </div>
-
 <%= link_to "New artwork", new_artwork_path %>
+</body>

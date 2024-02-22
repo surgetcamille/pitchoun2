@@ -11,6 +11,21 @@
   </head>
 
   <body>
+    <nav>
+  <div>
+    <ul>
+      <li>
+        <a  href="/">Museum</a>
+      </li>
+      <li>
+        <a  href="<%= new_artwork_path %>">Add an artwork</a>
+      </li>
+      <li >
+        <a href="<%= new_child_path %>">Artists Children</a>
+      </li>
+    </ul>
+  </div>
+</nav>
     <%= yield %>
   </body>
 </html>
